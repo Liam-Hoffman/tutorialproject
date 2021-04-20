@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+  <title>React App</title>
+</head>
+
+<nav>
+  <div>
+    <ul>
+      <li><a id="home" href="index.html#home">Home</a></li>
+      <li><a href="index.html#productPage">Store</a></li>
+      <li><a href="index.html#customShirt">Custom Shirt</a></li>
+      <li><a href="index.html#tutorial">Tutorial</a></li>
+    </ul>
+    </ul>
+  </div>
+</nav>
+
+<div class="seperator">
+  
+</div>
+
+<div class="section" id="aboutUs">
+
+</div>
+
+
+
+<div class="clear"></div>
+
+<div class="seperator">
+  
+</div>
+
+<h1 id="productPage">Products</h1>
+<div id="gallerySection" class="section">
+
+
+</div>
+
+<div class="clear"></div>
+
+<div class="seperator">
+  
+</div>
+
+<div id="customImage">
+  <div id="customSize"></div>
+</div>
+<div id="userCustomImage">
+  <div id="addImage"></div>
+</div>
+
+<div id="customShirt">
+  <h1 id="customPage">Custom Shirt</h1>
+      <tr>
+          <td>
+              Email*: <input type="text" name="email" required /><br><br>
+          </td>
+      </tr>
+          <td>
+              What color would you like?<br>
+              <div class="result">
+                      <input class="rbnWhite" type="radio" name="btn" value="white">
+
+                      <label for="white">white</label><br><br />
+
+                      <input class="rbnBlack" type="radio" name="btn" value="black">
+
+                      <label for="black">black</label><br><br />
+
+                      <input class="rbnBlue" type="radio" name="btn" value="blue">
+
+                      <label for="blue">blue</label><br><br>
+
+                      <input class="rbnRed" type="radio" name="btn" value="red">
+
+                      <label for="red">red</label><br><br>
+
+                      <input class="rbnGreen" type="radio" name="btn" value="green">
+
+                      <label for="green">green</label>
+              </div>
+              </select><br><br>
+          </td>
+      </tr>
+      <tr>
+          <td>
+              Image: <input id="userImage" type="text" name="image"><button id="btnaddImage" type="button">Add image</button>
+          </td><br><br>
+      </tr>
+      <tr>
+          <td>
+              $30.00 <button id="customButton" type="button">Add To Cart</button>
+          </td>
+      </tr>
+</div>
+
+</div>
+
+<div class="clear"></div>
+
+<div class="seperator">
+  
+</div>
+
+<div class="clear"></div>
+
+<div class="section">
+  <div id="cart" class="container">
+    <p id="items">Your Cart</p>
+    <p>Your Total:</p>
+    <p id="total"></p>
+  </div>
+</div>
+
+<div class="clear"></div>
+
+<div class="seperator">
+  
+</div>
+
+<div class="clear"></div>
+
+<div class="section" id="tutorial">
+  <h1>Tutorial Page</h1>
+  <div id="intro">
+    <h2>React introductory</h2>
+    <p>React is a javascript library that developers can use to make user interfaces, 
+      these interfaces are usually used on single page applications, 
+      much like the website you are seeing now. The user interface application of react is that of being able to create reusable components that can be
+      reused throughout the project. These components also allow the webpage to change the data on the page without reloading the page. This is achievable because react is
+      fast, simple, and easily scalable. React takes advantage of JSX files, which is just javascript that allows HTML. You may have seen react before but never noticed, facebook is 
+      build using react.
+    </p>
+    <img id="tutorialImage" src="react.png"/>
+  </div>
+
+
+
+  <div class="container">
+    <div class="left">
+      <h2>Installing React</h2>
+      <p>Navigate to https://www.npmjs.com/get-npm</p>
+      <p>Download and Install NPM</p>
+      <p>If you do not already have it installed, install visual studio code</p>
+      <p>Once NPM and VC goto Terminal>New Terminal and type "npm create-react-app my-app" and hit enter</p>
+      <p>Now type NPM start and your base react app will open!</p>
+    </div>
+    <div class="right">
+      <img id="tutorialImage" src="tutorial1.png"/>
+    </div>
+
+  </div>
+  
+  <div class="container">
+    <div class="left">
+      <h2>Using React</h2>
+      <p>Now that you have a react app created lets open the folder</p>
+      <p>Once open go into your src folder and create a new nested fold called components</p>
+      <p>This components folder will hold all our reuseable components for react</p>
+      <p>Now create a new file called "storeProduct.jsx" this will be a store item component</p>
+      <p>Now match the image to the right to your code</p>
+      <p>And now we are going to add some HTML</p>
+    </div>
+    <div class="right">
+      <img id="tutorialImage" src="tutorial2.png"/>
+      <img id="tutorialImage" src="tutorial3.png"/>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="left">
+      <h2>Using React</h2>
+      <p>Now that our component is done lets plug it in</p>
+      <p>Head over to the src folder and open up the index.js file</p>
+      <p>Match the image to the write and this will hook up our react component to be render</p>
+      <p>This component is matched to be rendered wherever the id "gallerySection" is</p>
+      <p>Now head to index.html in the public folder and create a div with the gallerySection id</p>
+      <p>Type NPM start and you have now created your first react component</p>
+    </div>
+    <div class="right">
+      <img id="tutorialImage" src="tutorial4.png"/>
+    </div>
+  </div>
+
+
+</div>
+  
+  
+  
+  </body>
+  
+  </html>
